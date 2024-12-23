@@ -1,0 +1,21 @@
+<svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Window Controls" clip-path="url(#clip0_731_3207)">
+<g id="Close">
+<circle cx="3.54199" cy="4.00008" r="3.125" fill="#ED6A5E"/>
+<circle cx="3.54199" cy="4.00008" r="2.86458" stroke="black" stroke-opacity="0.1" stroke-width="0.520833"/>
+</g>
+<g id="Minimize">
+<circle cx="13.959" cy="4.00008" r="3.125" fill="#F4BD50"/>
+<circle cx="13.959" cy="4.00008" r="2.86458" stroke="black" stroke-opacity="0.1" stroke-width="0.520833"/>
+</g>
+<g id="Zoom">
+<circle cx="24.376" cy="4.00008" r="3.125" fill="#61C454"/>
+<circle cx="24.376" cy="4.00008" r="2.86458" stroke="black" stroke-opacity="0.1" stroke-width="0.520833"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_731_3207">
+<rect width="27.0833" height="6.25" fill="white" transform="translate(0.416992 0.875076)"/>
+</clipPath>
+</defs>
+</svg>

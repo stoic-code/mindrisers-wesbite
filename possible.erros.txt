@@ -1,0 +1,10 @@
+ /*
+ ==> remove revalidation from fetchapi custom 
+    export const revalidate = 1 * 10 is not valid.
+    donot use nextjs font (s) error while cicd 
+    donot use nextjs image
+    why the hell two apis even after static site generation -- same like strict mode, two times it call the api
+    upgrade next js version and test
+    is it due to custom fetchAPI
+      inside here.. print error in which api too. 
+    */

@@ -1,0 +1,47 @@
+@import url('./tailwind.css');
+@import url('./universal.css');
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: initial !important;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+#admission-modal {
+    display: none;
+}
+
+#admission-modal.active {
+    display: flex !important;
+    position: fixed !important;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 900000;
+    width: 42px;
+    height: 42px;
+    color: white;
+    fill: currentColor;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#scroll-to-top svg {
+    width: 20px;
+}
+

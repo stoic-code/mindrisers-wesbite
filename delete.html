@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .element {
+            border-radius: 24px;
+            border: 10px solid;
+            border-image: linear-gradient(to bottom,
+                    #ff0000,
+                    #00ff00);
+            /* Replace #ff0000 and #00ff00 with your desired colors */
+            border-image-slice: 1;
+        }
+
+        .two {
+            border-top: 2px solid rgba(134, 228, 182, 1);
+            /* Set the color of the border */
+            border-left: 2px solid rgba(134, 228, 182, 1);
+            border-bottom: 2px solid transparent;
+            /* Set the color of the border */
+            /* border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-image: linear-gradient(to bottom, #ff0000, #00ff00);
+                border-image-slice: 1;
+                box-sizing: border-box; Include the border thickness in the overall dimensions */
+            border-radius: 24px;
+            position: relative;
+            border-image: linear-gradient(to right,
+                    rgba(134, 228, 182, 1) 0%,
+                    rgba(134, 228, 182, 0) 80%,
+                    rgba(255, 0, 0, 1) 80.39129376411438%,
+                    rgba(255, 0, 0, 0) 100%);
+        }
+
+        .two:before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            /* top: 0; */
+            /* top: 6px; */
+            left: 0;
+            transform: translateX(-100%);
+            width: 2px;
+            height: 100%;
+            height: 50%;
+            background-color: black;
+            /* background-image: linear-gradient(to bottom, rgba(134, 228, 182, 1), white); */
+            background-image: linear-gradient(to bottom,
+                    rgba(255, 0, 0, 1),
+                    white);
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 2px solid;
+            border-image: linear-gradient(to bottom,
+                    rgba(134, 228, 182, 1),
+                    rgba(255, 255, 255, 1)) 1;
+            border-bottom: none;
+            border-radius: 24px;
+        }
+
+        .three {
+            width: 300px;
+            height: 80px;
+            border: 10px solid;
+            border-radius: 24px;
+            background-image: linear-gradient(white, white),
+                linear-gradient(to right, green, gold);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            border-bottom: none;
+        }
+
+        .grounded-radiants {
+            width: 300px;
+            position: relative;
+            border: 4px solid transparent;
+            /* border-bottom: none;
+                border-radius: 16px;
+                background: white; */
+            background-clip: padding-box;
+            padding: 10px;
+            background: linear-gradient(to bottom, green 1%, white 95%);
+
+        }
+
+        .grounded-radiantss::after {
+            position: absolute;
+            top: -4px;
+            bottom: 0px;
+            left: -4px;
+            right: -4px;
+            /* background: linear-gradient(green, white); */
+            /* background: linear-gradient(to bottom, green, white); */
+            background: linear-gradient(to bottom, green 5%, white 95%);
+            content: "";
+            z-index: -1;
+            border-radius: 16px;
+        }
+
+        .test {
+            background: linear-gradient(to bottom, green 50%, white 100%);
+            background: linear-gradient(to bottom, red 10%, black 10% 60%, red 60% 100%);
+            background: linear-gradient(to bottom, red 10%, white 80%, white 10%);
+            background: linear-gradient(to bottom, red 10%, white 90%, );
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="grid-box border w-1/2 mx-auto mt-10 flex  gap-[20px] justify-center flex-wrap "
+    >
+        <div class="item border w-[25%] ">item-1</div>
+        <div class="item border w-[25%] ">item-2</div>
+        <div class="item border w-[25%] ">item-3</div>
+        <div class="item border w-[25%] ">item-4</div>
+        <div class="item border w-[25%] ">item-5</div>
+    </div>
+</body>
+
+</html>
